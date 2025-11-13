@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מאגר שבת חי</title>
+    <title>מאגר שבת חי | בית</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,10 +25,16 @@
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">ראשי</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">בית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="album.html">אלבום שירים</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="printable.html">קלפים להדפסה</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="panel.html">פאנל שבת חי</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" rel="noopener"
@@ -34,37 +45,144 @@
         </div>
     </nav>
 
-    <div class="container">
-        <header class="hero text-center my-5">
-            <h1 class="display-4">מאגר שבת חי</h1>
-            <p class="lead">אוסף חוויות, שירים ופעילויות לשולחן שבת</p>
-            <div class="hero-actions">
-                <a class="btn btn-primary btn-lg" href="#songs-container">עיינו בשירים</a>
-                <a class="btn btn-outline-light btn-lg" href="printable.html">הכנת קלפים לשולחן שבת</a>
-            </div>
-        </header>
-
-        <div class="row" id="songs-container">
-            <!-- Songs will be loaded here dynamically -->
-        </div>
-    </div>
-
-    <!-- Song Modal -->
-    <div class="modal fade" id="songModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>ברוכים הבאים למאגר שבת חי</h1>
+                    <p>
+                        מרכז דיגיטלי שמאגד שירים, קלפים, רעיונות ומשאבים להעצמת שולחן השבת.
+                        החומרים זמינים לשימוש ביתי, קהילתי וחינוכי – והכול בעברית מלאה ובגישה קלה.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary btn-lg" href="album.html">פתיחת אלבום השירים</a>
+                        <a class="btn btn-outline-light btn-lg" href="panel.html">הפעלת פאנל שבת</a>
+                        <a class="btn btn-outline-warning btn-lg" href="printable.html">הדפסת קלפים</a>
+                    </div>
                 </div>
-                <div class="modal-body"></div>
+                <div class="hero-side">
+                    <div class="hero-card">
+                        <h2>חזון המאגר</h2>
+                        <p>
+                            להעניק לכל משפחה, חבורה וחניך מאגר נגיש, עשיר ומעודכן המעצים את חוויית
+                            השבת – בבית, בבית הכנסת, בפנימייה או במחנה.
+                        </p>
+                        <ul>
+                            <li>תכנים מודולריים ומדידים</li>
+                            <li>תמיכה מלאה בעברית וב־RTL</li>
+                            <li>אפשרויות הורדה והדפסה</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>מה תמצאו במאגר?</h2>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>אלבום שירים</h3>
+                        <p>כרטיסיות דינמיות עם מילות השירים, הצגת אימוג'ים מהקורפוס, ותצוגת מודאל נוחה.</p>
+                        <a href="album.html" class="feature-link">למעבר לאלבום →</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>קלפים מודפסים</h3>
+                        <p>שלושה סטים מוכנים בגודל 7×10 ס״מ, מעוצבים להדפסה A4 עם משימות, שאלות ותוכן עמוק.</p>
+                        <a href="printable.html" class="feature-link">לסט הקלפים →</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>פאנל שבת</h3>
+                        <p>תצוגת מסך מלא לטלוויזיה עם קלפים מתחלפים, שעון שבת וטיקר הודעות מעורר השראה.</p>
+                        <a href="panel.html" class="feature-link">להפעלת הפאנל →</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>תיעוד והנחיות</h3>
+                        <p>קבצי <code>CONTRIBUTING</code>, <code>CODE_OF_CONDUCT</code>, <code>SECURITY</code>, מדריכים
+                            ותיעוד מלא.</p>
+                        <a href="docs/shabbat-panel-spec.md" class="feature-link"> לפתיחת התיעוד →</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>הורדות עתידיות</h3>
+                        <p>המאגר בתהליך הרחבה – מערכי שיעור, הדפסות נוספות, מוזיקה באיכות גבוהה ועוד. נשמח לרעיונות!</p>
+                        <a href="https://github.com/AnLoMinus/Shabat/issues" class="feature-link" target="_blank"
+                            rel="noopener">הצעת רעיון בגיטהאב →</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>צמיחה משותפת</h3>
+                        <p>הצטרפו כמתנדבים: כתיבה, עיצוב, בדיקות נגישות, או יצירת חומרים מקוריים לשבת.</p>
+                        <a href="CONTRIBUTING.md" class="feature-link">למדריך התרומה →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="download-section">
+            <div class="container">
+                <div class="download-card">
+                    <h2>נגישות לכל בעל חפץ</h2>
+                    <p>
+                        כל התכנים במאגר מתוכננים להיות חופשיים להורדה ולעיצוב מחדש. בשלב זה ניתן להוריד את קבצי
+                        המקור מהמאגר בגיטהאב, ובהמשך נוסיף חבילת הורדה מסודרת (ZIP) וקטלוג PDF מסודר.
+                    </p>
+                    <div class="download-actions">
+                        <a class="btn btn-warning btn-lg" target="_blank" rel="noopener"
+                            href="https://github.com/AnLoMinus/Shabat">מעבר לקוד המקור</a>
+                        <a class="btn btn-outline-light btn-lg" href="docs/printing-cards.md">מדריך הדפסה</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-section">
+            <div class="container">
+                <h2>קהילה, תרומה ודרך קדימה</h2>
+                <div class="community-grid">
+                    <article class="community-card">
+                        <h3>יומן אירועים</h3>
+                        <p>עקבו אחר הגרסאות והשינויים. אנו מנהלים שינויים לפי מתודולוגיית Keep a Changelog.</p>
+                        <a href="CHANGELOG.md" class="feature-link">צפייה ביומן →</a>
+                    </article>
+                    <article class="community-card">
+                        <h3>כללי הקהילה</h3>
+                        <p>המאגר מקדם סביבה מכבדת ושיתופית. קראו את קוד ההתנהגות והנחיות התרומה.</p>
+                        <div class="link-pair">
+                            <a href="CODE_OF_CONDUCT.md" class="feature-link">קוד התנהגות →</a>
+                            <a href="SUPPORT.md" class="feature-link">מרכז תמיכה →</a>
+                        </div>
+                    </article>
+                    <article class="community-card">
+                        <h3>מפת דרכים</h3>
+                        <p>בקשות חדשות, הרחבת תכנים לחגים, הקלטות ושיתופי פעולה – הכול פתוח לפרשנות.</p>
+                        <a href="https://github.com/AnLoMinus/Shabat/issues/new?template=feature_request.md"
+                            class="feature-link" target="_blank" rel="noopener">הצעת פיצ׳ר →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>מאגר שבת חי · פרויקט קוד פתוח לשם שמיים · 2025</p>
+            <p class="footer-links">
+                <a href="SECURITY.md">מדיניות אבטחה</a>
+                <span>·</span>
+                <a href="CHANGELOG.md">יומן אירועים</a>
+                <span>·</span>
+                <a href="LICENSE">רישוי (בקרוב)</a>
+                <span>·</span>
+                <a href="mailto:support@shabat.songs">support@shabat.songs</a>
+            </p>
+            <p class="footer-credit">
+                פיתוח: <a href="https://github.com/AnLoMinus" target="_blank" rel="noopener">AnLoMinus</a> ·
+                אפיון ועיצוב חוויית משתמש: מאגר שבת חי ·
+                ליווי טכנולוגי: GPT-5 Codex
+            </p>
         </div>
-    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="scripts.js"></script>
 </body>
 
 </html>

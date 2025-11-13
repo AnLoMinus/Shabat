@@ -10,10 +10,38 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">אלבום שירי שבת</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">ראשי</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="printable.html">קלפים להדפסה</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" rel="noopener"
+                            href="https://github.com/AnLoMinus/Shabat">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <header class="text-center my-5">
+        <header class="hero text-center my-5">
             <h1 class="display-4">אלבום שירי שבת</h1>
             <p class="lead">אוסף שירים מיוחדים לכבוד שבת קודש</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary btn-lg" href="#songs-container">עיינו בשירים</a>
+                <a class="btn btn-outline-light btn-lg" href="printable.html">הכנת קלפים לשולחן שבת</a>
+            </div>
         </header>
 
         <div class="row" id="songs-container">

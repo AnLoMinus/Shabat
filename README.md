@@ -1,22 +1,55 @@
-# אלבום שירי שבת - Web Album of Shabbat Songs
+# אלבום שירי שבת
 
-אתר המציג אוסף שירי שבת בצורה נעימה ונגישה.
-A website showcasing a collection of Shabbat songs in a pleasant and accessible way.
+אתר סטטי המציג אוסף שירי שבת בצורה נוחה, נגישה ומרגשת לקראת שבת קודש.  
+[אתר חי](https://anlominus.github.io/Shabat/) · [מאגר GitHub](https://github.com/AnLoMinus/Shabat)
 
-## תכונות | Features
+**גרסה נוכחית:** 0.2.0 (13 בנובמבר 2025)
 
-- תצוגת כרטיסים אלגנטית לכל השירים | Elegant card display for all songs
-- אנימציות חלקות בעת מעבר עכבר | Smooth hover animations
-- חלון מודאלי לקריאת השיר המלא | Modal window for reading the full song
-- תמיכה מלאה בעברית ו-RTL | Full Hebrew and RTL support
-- עיצוב רספונסיבי | Responsive design
-- טעינה דינמית של תוכן השירים | Dynamic loading of song content
-- תצוגת אימוג'ים מהכותרות | Display of emojis from titles
+## מה יש כאן?
 
-## טכנולוגיות | Technologies
+- **גלריית שירים** – כרטיסיות רספונסיביות הטוענות Markdown דינמי מתוך תיקיית `songs/`.
+- **חלון מודאלי** – קריאה נוחה של מילות השיר עם תמיכה מלאה בעברית, RTL ו-Markdown.
+- **אנימציות עדינות** – חוויית משתמש חלקה באמצעות Bootstrap ו-CSS מודרני.
+- **סטי קלפים מודפסים** – שלושה עמודים מוכנים להדפסה (A4 לרוחב, 7×10 ס״מ) להפעלת שולחן שבת.
+- **תשתית תיעוד מלאה** – קוד התנהגות, מדריך תרומה, אבטחה, תמיכה ויומן אירועים.
+
+## מבנה המאגר
+
+```text
+.
+├── index.html          # דף נחיתה ראשי
+├── scripts.js          # טעינת שירים ודינמיקה של הכרטיסים
+├── styles.css          # עיצוב כללי ו-RTL
+├── songs/              # קבצי Markdown של השירים (1–18)
+├── docs/               # תיעוד משלים (למשל מדריך קלפים להדפסה)
+└── .github/            # תבניות Issues/PR ותמיכה במימון
+```
+
+## טכנולוגיות
 
 - HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
-- Marked.js (for Markdown parsing)
+- CSS3 + Bootstrap 5
+- JavaScript ES2020
+- Marked.js עבור פענוח Markdown
+
+## מפת דרכים
+
+- הרחבת תפריט האתר עם קישור לעמוד קלפים להדפסה (9 קלפים בגודל 7×10 ס״מ על A4).
+- ניהול תכנים נוסף (למשל JSON/YAML) לטובת קלפים, מקורות ושיתופים.
+- הוספת תמיכה במצב כהה ובנגישות (ARIA, קונטרסט).
+
+## תרומה
+
+מתעניינים לתרום? נהדר! התחילו ב-[CONTRIBUTING.md](CONTRIBUTING.md),  
+קראו את [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), ותעדכנו את [CHANGELOG.md](CHANGELOG.md) בעת תרומה.
+
+## דיווח בעיות ותמיכה
+
+- בעיות ושאלות – פתחו issue מתאים מתבניות `.github/ISSUE_TEMPLATE`.
+- תמיכה ישירה – `support@shabat.songs`
+- אבטחה – `security@shabat.songs` (ראו [SECURITY.md](SECURITY.md))
+
+## זכות יוצרים ורישוי
+
+תוכן השירים כפוף לרישוי שיעודכן בהמשך. תרומות קוד כפופות לרישיון עתידי (TODO).  
+אנא ודאו שהחומרים שאתם מוסיפים מותרים לשימוש באתר ציבורי.

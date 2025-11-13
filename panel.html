@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פאנל שבת חי</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="panel.css">
+</head>
+
+<body class="panel">
+    <header class="panel-header">
+        <div class="logo">מאגר שבת חי</div>
+        <div class="time-block">
+            <div class="current-time" id="current-time">--:--</div>
+            <div class="shabbat-status" id="shabbat-status">הכנות לקראת שבת</div>
+        </div>
+        <button class="fullscreen-trigger" id="fullscreen-trigger">מסך מלא</button>
+    </header>
+
+    <main class="panel-content">
+        <section class="hero-quote" id="hero-quote">
+            <div class="quote-icon" id="hero-emoji">🌟</div>
+            <blockquote id="hero-text">שבת שלום!</blockquote>
+            <cite id="hero-source"></cite>
+        </section>
+
+        <section class="detail-card" id="detail-card">
+            <header>
+                <span class="badge" id="card-category">השראה</span>
+                <h1 id="card-title">קלף פתיחה</h1>
+            </header>
+            <div class="card-sections">
+                <article class="card-section">
+                    <h2>תיאור</h2>
+                    <p id="card-description">פרטי הקלף יופיעו כאן.</p>
+                </article>
+                <article class="card-section">
+                    <h2>הלכה למעשה</h2>
+                    <p id="card-practical">הנחיה קצרה למשפחה.</p>
+                </article>
+                <article class="card-section" id="card-reflection-section">
+                    <h2>שאלות להתבוננות</h2>
+                    <ul id="card-reflection"></ul>
+                </article>
+                <article class="card-section">
+                    <h2>פעולת השבוע</h2>
+                    <p id="card-action">הצעה קטנה ליישום.</p>
+                </article>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <section class="ticker" id="ticker">
+                <h3>דגשים לשבת</h3>
+                <ul id="ticker-list"></ul>
+            </section>
+            <section class="next-card" id="next-card">
+                <h3>בקרוב</h3>
+                <p id="next-card-title">קלף נוסף בדרך...</p>
+                <p id="next-card-category"></p>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="panel-footer">
+        <div class="progress-bar">
+            <span id="progress-bar-fill"></span>
+        </div>
+        <div class="meta-info" id="meta-info">
+            סט פתיחה · קלף #001
+        </div>
+    </footer>
+
+    <script src="panel.js" type="module"></script>
+</body>
+
+</html>
